@@ -24,11 +24,17 @@ int main(void) {
 
     // servinfo now points to a linked list of 1 or more struct addrinfos
     // do whatever you need to do until you don't need servinfo anymore
-
     freeaddrinfo(servinfo); // Free the linked list
 
     /* Example 2 */
     // end of pg 21, start of pg 22
     memset(&hints, 0, sizeof(hints));   // Make sure the struct is empty
-    
+    hints.ai_family = AF_UNSPEC;        // Don't care if IPv4 or IPv6
+    hints.ai_socktype = SOCK_STREAM;    // TCP stream sockets
+
+    // use getaddrinfo to get the address info for google.com
+    if((status = getaddrinfo("www.google.com", NULL, &hints, &servinfo)) != 0) {
+        fprintf(stderr, "getaddrinfo error: %s\n", gai_strerror(status));
+        return 1;
+    }
 }
