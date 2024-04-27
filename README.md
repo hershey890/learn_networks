@@ -14,6 +14,8 @@ $ cmake --build build
 The executable's will now be available in `./build/{sub project name}/{executable name}`, ex. `/build/beej_network_concepts/ch3`
 
 ## Covered Concepts
+- Berkeley Sockets (via C sockets API in ./beej_network_concepts/)
+- A basic HTTP Echo Server in Python (./http_server_python/)
 
 ## Resources
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
