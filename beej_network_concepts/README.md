@@ -54,3 +54,17 @@ listener: got packet from 127.0.0.1
 listener: packet is 15 bytes long
 listener: packet contains "Hello UDP World"
 ```
+
+## File Descriptions:
+- ch3_inet:
+- ch5_getaddrinfo:
+- ch6_server:
+- ch6_client:
+- tcp_client_server_multiprocessed:
+- ch6_listener:
+- ch6_talker:
+- ch7_poll: 
+
+## Todo
+- Ch 7
+- Ch 8

@@ -20,6 +20,9 @@ The executable's will now be available in `./build/{sub project name}/{executabl
 - A basic HTTP TCP Client-Server in C (./beej/network/concepts/ch6_{client,server}.c)
 - A basic HTTP UDP Client-Server in C (./beej/network/concepts/ch6_{listener,talker}.c)
 
+## Todo
+- Basics of RSA, SSH, SSL, and use OpenSSL
+
 ## Resources
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
 - [Beej's Guide to Networking Concepts](https://beej.us/guide/bgnet0/)
