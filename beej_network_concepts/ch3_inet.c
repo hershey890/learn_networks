@@ -1,3 +1,6 @@
+/**
+ * @brief converts ip addresses to sockaddr_in structs and back 
+ */
 #include <stdio.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
